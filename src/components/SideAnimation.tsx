@@ -20,7 +20,7 @@ const SideAnimation = <T extends React.ElementType>(Component: T) => {
     children: React.ReactNode;
     side: "left" | "right";
   } & React.ComponentProps<T>) => {
-    const MotionComponent = motion(Component);
+    const MotionComponent = motion(Component as any);
     const variants =
       side === "left" ? animationVariantsLeft : animationVariantsRight;
 
