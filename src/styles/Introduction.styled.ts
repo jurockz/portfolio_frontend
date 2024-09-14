@@ -13,7 +13,7 @@ export const StyledSection = styled.section<StyledSectionI>`
   align-items: center;
   background: ${(props) => props.colorb || "#fff"};
   @media (max-width: 880px) {
-    padding: 20px 20px 0px 20px;
+    padding: 50px 20px 0px 20px;
   }
 `;
 
