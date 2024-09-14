@@ -7,8 +7,6 @@ import {
   AnimatedNavBarContainerTwo,
   StyledLogoLink,
   StyledMobileNavContainer,
-  StyledNavBarContainer,
-  StyledNavBarContainerTwo,
   StyledNavBarWrapper,
 } from "../styles/NavBar.styled";
 
