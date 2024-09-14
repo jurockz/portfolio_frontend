@@ -7,13 +7,14 @@ interface StyledSectionI {
 
 export const StyledSection = styled.section<StyledSectionI>`
   padding: 100px 20px 0px 20px;
-  height: calc(100vh - 100px);
+  min-height: calc(100vh - 100px);
   display: flex;
   justify-content: center;
   align-items: center;
   background: ${(props) => props.colorb || "#fff"};
   @media (max-width: 880px) {
     padding: 50px 20px 0px 20px;
+    min-height: calc(100vh - 50px);
   }
 `;
 
