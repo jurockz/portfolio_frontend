@@ -2,7 +2,18 @@ import styled from "styled-components";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 
-//black
+export const StyledMobileNavContainer = styled(Link)`
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 3px;
+  border-radius: 50%;
+`;
 
 export const StyledNavBarContainer = styled.nav`
   position: fixed;

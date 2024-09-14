@@ -6,6 +6,7 @@ import {
   AnimatedNavBarContainer,
   AnimatedNavBarContainerTwo,
   StyledLogoLink,
+  StyledMobileNavContainer,
   StyledNavBarContainer,
   StyledNavBarContainerTwo,
   StyledNavBarWrapper,
@@ -21,20 +22,13 @@ export default function Navbar() {
   if (isMobile) {
     return (
       <>
-        <StyledNavBarContainer>
-          <StyledLogoLink to="Introduction" smooth={true} duration={500}>
-            <img src={logo} alt="Logo" width={50} height={50} />
-            Jurek
-          </StyledLogoLink>
-          <StyledNavBarWrapper></StyledNavBarWrapper>
-        </StyledNavBarContainer>
-        <StyledNavBarContainerTwo>
-          <StyledLogoLink to="Introduction" smooth={true} duration={500}>
-            <img src={logo_black} alt="Logo" width={50} height={50} />
-            Jurek
-          </StyledLogoLink>
-          <StyledNavBarWrapper></StyledNavBarWrapper>
-        </StyledNavBarContainerTwo>
+        <StyledMobileNavContainer
+          to="Introduction"
+          smooth={true}
+          duration={500}
+        >
+          <img src={logo} alt="Logo" width={50} height={50} />
+        </StyledMobileNavContainer>
       </>
     );
   }
