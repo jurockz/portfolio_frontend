@@ -28,7 +28,7 @@ export const StyledContainer = styled.div`
 
   @media (max-width: 880px) {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto 1fr;
   }
 `;
 
@@ -68,6 +68,13 @@ export const StyledLongInfo = styled.div`
   @media (max-width: 880px) {
     max-width: 330px;
   }
+`;
+
+export const StyledExperienceLink = styled(Link)`
+  color: #57669c;
+  text-decoration: underline;
+  cursor: pointer;
+  line-height: 2;
 `;
 
 export const StyledButtonWrapper = styled.div`

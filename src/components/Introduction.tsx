@@ -2,6 +2,7 @@ import {
   StyledButtonWrapper,
   StyledContactBtn,
   StyledContainer,
+  StyledExperienceLink,
   StyledImageContainer,
   StyledImageWrapper,
   StyledIntroductionContainer,
@@ -27,11 +28,17 @@ export default function Introduction() {
           <StyledTitle>Jurek Ohrndorf</StyledTitle>
           <StyledShortInfo>Full-Stack | Machine Learning</StyledShortInfo>
           <StyledLongInfo>
-            Ich habe an der Rheinischen Fachhochschule Informatik studiert. In
-            vielen Projekten während des Studiums konnte ich bereits Erfahrungen
-            im Bereich Machine Learning erlangen. Außerdem konnte ich in meinen
-            Werkstudententätigkeiten bei CHECK24, Antwerpes und Micromerce schon
-            einiges an Erfahrung als Full-Stack- und QA-Engineer sammeln.
+            Hi! Ich bin Jurek Ohrndorf.
+            <br /> Ich habe eine große Leidenschaft für das Programmieren und
+            liebe es, kreative Lösungen für anspruchsvolle Probleme zu finden.
+            Meinen Abschluss in Informatik habe ich an der Rheinischen
+            Hochschule gemacht. Während meines Studiums und meiner Tätigkeit als
+            Werkstudent bei CHECK24, Antwerpes und Micromerce konnte ich bereits
+            wertvolle Praxiserfahrung sammeln.
+            <br />
+            <StyledExperienceLink to="Experience" smooth={true} duration={1500}>
+              Erfahre hier mehr über meine Erfahrung.
+            </StyledExperienceLink>
           </StyledLongInfo>
           <StyledButtonWrapper>
             <StyledContactBtn to="Contact" smooth={true} duration={500}>

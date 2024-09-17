@@ -10,16 +10,9 @@ import check24Logo from "../assets/check24_logo.svg";
 import micromerceLogo from "../assets/micromerce_logo_text.svg";
 import rhLogo from "../assets/rh_logo_text.svg";
 
-// import DownAnimation from "./DownAnimation";
-// import SideAnimation from "./SideAnimation";
-
-// const DownStyledTitle = DownAnimation(StyledTitle);
-// const DownStyledWrapper = DownAnimation(StyledDefaultWrapper);
-// const SideStyledExpertiseContainer = SideAnimation(StyledExpertiseContainer);
-
 export default function Experience() {
   return (
-    <StyledSection colorb="white">
+    <StyledSection id="Experience" colorb="white">
       <StyledExpContainer>
         <StyledLogoContainer>
           <img src={check24Logo} width={200} alt="check24 Logo" />
