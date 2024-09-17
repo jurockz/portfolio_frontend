@@ -37,7 +37,7 @@ export default function Introduction() {
             wertvolle Praxiserfahrung sammeln.
             <br />
             <StyledExperienceLink to="Experience" smooth={true} duration={1500}>
-              Erfahre hier mehr über meine Erfahrung.
+              Erfahre mehr...
             </StyledExperienceLink>
           </StyledLongInfo>
           <StyledButtonWrapper>
