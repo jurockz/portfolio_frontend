@@ -6,10 +6,8 @@ import {
   StyledDefaultWrapper,
 } from "../styles/Expertise.styled";
 import Chips from "./common/Chips";
-import DownAnimation from "./DownAnimation";
 import { motion } from "framer-motion";
 
-const DownStyledTitle = DownAnimation(StyledTitle);
 const UpStyledWrapper = motion(StyledDefaultWrapper);
 
 export default function Expertise() {

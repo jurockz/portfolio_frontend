@@ -7,7 +7,7 @@ import {
 import check24Logo from "../assets/check24_logo.svg";
 import micromerceLogo from "../assets/micromerce_logo_text.svg";
 import rhLogo from "../assets/rh_logo_text.svg";
-import { StyledText, StyledWordSpan } from "../styles/Common.styled";
+import { StyledWordSpan } from "../styles/Common.styled";
 import Text from "./common/Text";
 
 export default function Experience() {

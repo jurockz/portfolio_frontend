@@ -1,8 +1,4 @@
-import {
-  StyledChip,
-  StyledChipContainer,
-  StyledChipWrapper,
-} from "../../styles/Chips.styled";
+import { StyledChip, StyledChipContainer } from "../../styles/Chips.styled";
 
 import { AnimationI, PaddingI } from "../../types/common";
 import AnimationWrapper, { ChipsWrapperProps } from "./ChipWrapper";

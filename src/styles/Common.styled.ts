@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { MediaPaddingI, PaddingI, TextI } from "../types/common";
 
 export const StyledPaddingDiv = styled.div<PaddingI & MediaPaddingI>`
