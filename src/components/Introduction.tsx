@@ -6,14 +6,13 @@ import {
   StyledImageContainer,
   StyledImageWrapper,
   StyledIntroductionContainer,
-  StyledLongInfo,
   StyledSection,
-  StyledShortInfo,
-  StyledTitle,
 } from "../styles/Introduction.styled";
 import image from "../assets/Bewerbungsfoto.jpg";
 import linkedin_icon from "../assets/linkedIn.svg";
 import github_icon from "../assets/github_icon.svg";
+import Logo from "./common/Logo";
+import Text from "./common/Text";
 
 export default function Introduction() {
   return (
@@ -25,9 +24,28 @@ export default function Introduction() {
           </StyledImageWrapper>
         </StyledImageContainer>
         <StyledIntroductionContainer>
-          <StyledTitle>Jurek Ohrndorf</StyledTitle>
-          <StyledShortInfo>Full-Stack | Machine Learning</StyledShortInfo>
-          <StyledLongInfo>
+          <Text
+            $color="black"
+            $fontSize={40}
+            $paddingBottom={10}
+            $TextAlign="start"
+          >
+            Jurek Ohrndorf
+          </Text>
+          <Text
+            $color="#565656"
+            $fontSize={20}
+            $paddingBottom={10}
+            $TextAlign="start"
+          >
+            Full-Stack | Machine Learning
+          </Text>
+          <Text
+            $color="#787878"
+            $fontSize={18}
+            $TextAlign="start"
+            $mediaMaxWidth="330px"
+          >
             Hi! Ich bin Jurek Ohrndorf.
             <br /> Ich habe eine große Leidenschaft für das Programmieren und
             liebe es, kreative Lösungen für anspruchsvolle Probleme zu finden.
@@ -39,20 +57,25 @@ export default function Introduction() {
             <StyledExperienceLink to="Experience" smooth={true} duration={1500}>
               Erfahre mehr...
             </StyledExperienceLink>
-          </StyledLongInfo>
+          </Text>
           <StyledButtonWrapper>
             <StyledContactBtn to="Contact" smooth={true} duration={500}>
               Kontaktieren
             </StyledContactBtn>
-            <a
+            <Logo
+              src={linkedin_icon}
+              width={60}
+              height={60}
               href="https://www.linkedin.com/in/jurek-ohrndorf-8431001ba/"
-              target="_blank"
-            >
-              <img src={linkedin_icon} width={60} height={60} alt="linkedin" />
-            </a>
-            <a href="https://github.com/jurockz" target="_blank">
-              <img src={github_icon} width={60} height={60} alt="github" />
-            </a>
+              alt="linkedIn"
+            />
+            <Logo
+              src={github_icon}
+              width={60}
+              height={60}
+              href="https://github.com/jurockz"
+              alt="github"
+            />
           </StyledButtonWrapper>
         </StyledIntroductionContainer>
       </StyledContainer>

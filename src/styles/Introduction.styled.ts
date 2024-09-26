@@ -51,18 +51,6 @@ export const StyledIntroductionContainer = styled.div`
   }
 `;
 
-export const StyledTitle = styled.div`
-  font-weight: bold;
-  font-size: 40px;
-  margin-bottom: 10px;
-`;
-
-export const StyledShortInfo = styled.div`
-  color: #565656;
-  margin-bottom: 10px;
-  font-size: 20px;
-`;
-
 export const StyledLongInfo = styled.div`
   color: #787878;
   @media (max-width: 880px) {

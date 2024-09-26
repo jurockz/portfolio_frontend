@@ -1,56 +1,86 @@
 import {
   StyledContainer,
-  StyledExpertise,
-  StyledExpertiseContainer,
   StyledTitle,
   StyledSection,
   StyledSecContainer,
   StyledDefaultWrapper,
 } from "../styles/Expertise.styled";
+import Chips from "./common/Chips";
 import DownAnimation from "./DownAnimation";
-import SideAnimation from "./SideAnimation";
+import { motion } from "framer-motion";
 
 const DownStyledTitle = DownAnimation(StyledTitle);
-const DownStyledWrapper = DownAnimation(StyledDefaultWrapper);
-const SideStyledExpertiseContainer = SideAnimation(StyledExpertiseContainer);
+const UpStyledWrapper = motion(StyledDefaultWrapper);
 
 export default function Expertise() {
   return (
     <StyledSection id="Expertise" colorb="#ffffff">
       <StyledContainer>
         <div>
-          <DownStyledTitle>Kenntnisse</DownStyledTitle>
-
-          <SideStyledExpertiseContainer side="left">
-            <StyledExpertise>HTML</StyledExpertise>
-            <StyledExpertise>CSS</StyledExpertise>
-            <StyledExpertise>JavaScript</StyledExpertise>
-            <StyledExpertise>React</StyledExpertise>
-            <StyledExpertise>Next js</StyledExpertise>
-            <StyledExpertise>Python</StyledExpertise>
-            <StyledExpertise>TensorFlow</StyledExpertise>
-            <StyledExpertise>Flask</StyledExpertise>
-            <StyledExpertise>Selenium</StyledExpertise>
-            <StyledExpertise>MongoDB</StyledExpertise>
-            <StyledExpertise>Go</StyledExpertise>
-            <StyledExpertise>Java</StyledExpertise>
-            <StyledExpertise>Spring Boot</StyledExpertise>
-          </SideStyledExpertiseContainer>
+          <Chips
+            title={{
+              children: "Kenntnisse",
+              $fontSize: 40,
+              $paddingBottom: 20,
+              $color: "black",
+              $animate: true,
+              $fadeIn: "bottom",
+            }}
+            chipWrapper={{
+              $animate: true,
+              $fadeIn: "bottom",
+            }}
+            content={[
+              "HTML",
+              "CSS",
+              "JavaScript",
+              "React",
+              "Next js",
+              "Vue",
+              "Node.js",
+              "Express",
+              "Python",
+              "Flask",
+              "TensorFlow",
+              "Selenium",
+              "MongoDB",
+              "Java",
+              "Spring Boot",
+            ]}
+          />
         </div>
         <StyledSecContainer>
-          <DownStyledWrapper>
+          <UpStyledWrapper
+            initial="hidden"
+            whileInView="visible"
+            variants={{
+              hidden: { opacity: 0, y: 30 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
+          >
             <StyledTitle>Sprachen</StyledTitle>
 
             <div>Deutsch - Muttersprache</div>
             <div>Englisch - Fließend in Wort und Schrift</div>
-          </DownStyledWrapper>
+          </UpStyledWrapper>
           <div>
-            <DownStyledTitle>Hobbys</DownStyledTitle>
-            <SideStyledExpertiseContainer side="right">
-              <StyledExpertise>Basketball</StyledExpertise>
-              <StyledExpertise>Joggen</StyledExpertise>
-              <StyledExpertise>Malen</StyledExpertise>
-            </SideStyledExpertiseContainer>
+            <Chips
+              title={{
+                children: "Hobbys",
+                $fontSize: 40,
+                $paddingBottom: 20,
+                $color: "black",
+                $animate: true,
+                $fadeIn: "bottom",
+              }}
+              chipWrapper={{
+                $animate: true,
+                $fadeIn: "bottom",
+              }}
+              content={["Basketball", "Joggen", "Malen"]}
+            />
           </div>
         </StyledSecContainer>
       </StyledContainer>

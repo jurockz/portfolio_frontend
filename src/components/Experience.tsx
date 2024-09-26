@@ -2,13 +2,13 @@ import {
   StyledExpContainer,
   StyledLogoContainer,
   StyledSection,
-  StyledText,
-  StyledWordSpan,
 } from "../styles/Experience.styled";
 
 import check24Logo from "../assets/check24_logo.svg";
 import micromerceLogo from "../assets/micromerce_logo_text.svg";
 import rhLogo from "../assets/rh_logo_text.svg";
+import { StyledText, StyledWordSpan } from "../styles/Common.styled";
+import Text from "./common/Text";
 
 export default function Experience() {
   return (
@@ -17,7 +17,13 @@ export default function Experience() {
         <StyledLogoContainer>
           <img src={check24Logo} width={200} alt="check24 Logo" />
         </StyledLogoContainer>
-        <StyledText>
+        <Text
+          $paddingBottom={10}
+          $maxWidth="60%"
+          $mediaMaxWidth="80%"
+          $animate
+          $fadeIn="bottom"
+        >
           Bei <StyledWordSpan>CHECK24</StyledWordSpan> habe ich zunächst in der
           QA-Abteilung manuelle Tests für die Apps und die Website durchgeführt.
           Bereits nach kurzer Zeit übernahm ich zunehmend Programmieraufgaben,
@@ -31,8 +37,14 @@ export default function Experience() {
           <StyledWordSpan>MongoDB</StyledWordSpan> sammeln konnte. Zudem
           erlernte ich den Umgang mit <StyledWordSpan>Git</StyledWordSpan> und
           arbeitete im Scrum-Team.
-        </StyledText>
-        <StyledText>
+        </Text>
+        <Text
+          $paddingBottom={10}
+          $maxWidth="60%"
+          $mediaMaxWidth="80%"
+          $animate
+          $fadeIn="bottom"
+        >
           Darüber hinaus erstellte ich mit{" "}
           <StyledWordSpan>Python</StyledWordSpan> und{" "}
           <StyledWordSpan>Selenium/Appium</StyledWordSpan> automatisierte Tests
@@ -42,14 +54,20 @@ export default function Experience() {
           werden, neu zu designen und zu entwickeln. Hierbei konnte ich mein
           gesammeltes Wissen erfolgreich anwenden und erhielt durchweg positive
           Rückmeldungen.
-        </StyledText>
+        </Text>
       </StyledExpContainer>
 
       <StyledExpContainer>
         <StyledLogoContainer>
           <img src={micromerceLogo} width={200} alt="check24 Logo" />
         </StyledLogoContainer>
-        <StyledText>
+        <Text
+          $paddingBottom={10}
+          $maxWidth="60%"
+          $mediaMaxWidth="80%"
+          $animate
+          $fadeIn="bottom"
+        >
           Um meine Frontend-Erfahrungen weiter auszubauen, wechselte ich zu{" "}
           <StyledWordSpan>Micromerce</StyledWordSpan>. Dort konnte ich mein
           Wissen und meine praktischen Fähigkeiten, insbesondere in{" "}
@@ -65,14 +83,20 @@ export default function Experience() {
           letzten Studienjahr meinen Fokus auf den erfolgreichen Abschluss
           meines Bachelors zu legen. Diese Entscheidung erwies sich als richtig,
           wie meine sehr gut abgeschlossene Bachelorthesis zeigt.
-        </StyledText>
+        </Text>
       </StyledExpContainer>
 
       <StyledExpContainer>
         <StyledLogoContainer>
           <img src={rhLogo} width={200} alt="check24 Logo" />
         </StyledLogoContainer>
-        <StyledText>
+        <Text
+          $paddingBottom={10}
+          $maxWidth="60%"
+          $mediaMaxWidth="80%"
+          $animate
+          $fadeIn="bottom"
+        >
           An der Hochschule wurden uns in mehreren Modulen die Grundlagen der
           objektorientierten Programmierung beigebracht. Jedes Semester
           erstellten wir ein Coding-Projekt, um das theoretische Wissen aus den
@@ -94,7 +118,7 @@ export default function Experience() {
           transformerbasierten Modells“ erhielt ich die Auszeichnung für die{" "}
           <StyledWordSpan>beste Bachelor-Thesis</StyledWordSpan> im Fachbereich
           Informatik.
-        </StyledText>
+        </Text>
       </StyledExpContainer>
     </StyledSection>
   );

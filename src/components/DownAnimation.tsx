@@ -14,7 +14,10 @@ const DownAnimation = <T extends React.ComponentType<any>>(Component: T) => {
       <MotionComponent
         initial="hidden"
         whileInView="visible"
-        variants={animationVariants}
+        variants={{
+          hidden: { opacity: 0, y: -30 },
+          visible: { opacity: 1, y: 0 },
+        }}
         transition={{ duration: 0.5 }}
         viewport={{ once: true, amount: 0.5 }}
         {...(props as React.ComponentProps<T>)} // Type assertion to match prop types

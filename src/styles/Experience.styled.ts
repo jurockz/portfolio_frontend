@@ -27,20 +27,3 @@ export const StyledLogoContainer = styled.div`
   width: 60%;
   padding-bottom: 40px;
 `;
-
-export const StyledText = styled.div`
-  color: #86868b;
-  font-size: 21px;
-  padding-bottom: 10px;
-  width: 60%;
-  @media (max-width: 880px) {
-    width: 80%;
-    font-size: 16px;
-  }
-  text-align: center;
-`;
-
-export const StyledWordSpan = styled.span`
-  color: #1d1d1f;
-  font-weight: bold;
-`;

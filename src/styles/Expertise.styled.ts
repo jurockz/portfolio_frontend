@@ -31,23 +31,6 @@ export const StyledTitle = styled.div`
   color: black;
 `;
 
-export const StyledExpertiseContainer = styled.div`
-  max-width: 400px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-`;
-
-export const StyledExpertise = styled.div`
-  display: inline-block;
-  color: white;
-  font-weight: bold;
-  border-radius: 10px;
-  padding: 8px;
-  margin: 5px;
-  background: black;
-`;
-
 export const StyledSecContainer = styled.div`
   display: grid;
   grid-template-rows: 1fr 1fr;
