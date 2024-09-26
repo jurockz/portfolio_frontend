@@ -82,7 +82,7 @@ export default function Projects() {
           src={github_icon}
           width={60}
           height={60}
-          href="https://github.com/jurockz"
+          href="https://github.com/jurockz/portfolio_frontend"
           alt="github"
         />
       </StyledProjectContainer>
@@ -165,7 +165,7 @@ export default function Projects() {
             src={github_icon}
             width={60}
             height={60}
-            href="https://github.com/jurockz"
+            href="https://github.com/jurockz/vue-chat-frontend"
             alt="github"
             title="Frontend"
           />
@@ -173,7 +173,7 @@ export default function Projects() {
             src={github_icon}
             width={60}
             height={60}
-            href="https://github.com/jurockz"
+            href="https://github.com/jurockz/node-chat-api"
             alt="github"
             title="Backend"
           />
